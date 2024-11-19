@@ -4,14 +4,14 @@
 Continuando con el tema de Microsoft Message Queue, mostraré como recibir un mensaje almacenado en la cola de espera. En la primera parte de este tutorial enviamos un mensaje a una cola de espera por lo que ahora hare un programa que utilice el método Receive() de la clase MessageQueueHelper que puse de ejemplo en la primera parte de este tutorial para obtener ese mensaje y mostrarlo.
 </p>
 <div>
-<IMG src="picture_library/msmq/fig4.png" width="713">
+<IMG src="images/fig4.png" width="713">
 </div><br>
 <p>
 Hay que recordar que MSMQ trabaja con un principio <b>FIFO (First In, First Out)</b> lo que significa que el primer mensaje en la cola es el mensaje que recuperarás utilizando los métodos <i>Receive()</i> o <i>Peek()</i> de la clase <a href="http://msdn.microsoft.com/en-us/library/system.messaging.messagequeue.aspx">MessageQueue</a>.
 </p>
 <p>Al ejecutar el programa se verá la siguiente salida:</p>
 <div>
-<IMG src="picture_library/msmq/fig6.png" width="713">
+<IMG src="images/fig6.png" width="713">
 </div><br>
 <p align="justify">Ahora voy a explicar cómo funcionan los métodos de la clase <b>MessageQueueHelper</b>.
 El método <i>CreateQueue()</i> recibe tres parámetros que indican las siguientes propiedades:
